@@ -2,13 +2,20 @@
 
 import { Shield, UserCheck, Users, Milestone, ArrowRight, Lock, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 export function FeatureSections() {
     return (
         <div className="bg-neutral-950 w-full relative z-10">
 
             {/* --- Sektion: Für wen ist JobBridge? --- */}
-            <section className="py-24 px-4 container mx-auto">
+            <motion.section
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                className="py-24 px-4 container mx-auto"
+            >
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Für wen ist JobBridge?</h2>
                     <p className="text-neutral-400 max-w-2xl mx-auto">
@@ -37,13 +44,18 @@ export function FeatureSections() {
                         points={["Geprüfte Profile", "Rechtlich sicherer Rahmen", "Einfache Abwicklung", "Für privat & gewerblich"]}
                     />
                 </div>
-            </section>
+            </motion.section>
 
             {/* --- Sektion: Sicherheit & Vertrauen --- */}
             <section className="py-24 border-t border-white/5 relative overflow-hidden">
                 <div className="absolute inset-0 bg-cyan-900/5 pointer-events-none" />
                 <div className="container mx-auto px-4 grid md:grid-cols-2 gap-16 items-start relative z-10">
-                    <div>
+                    <motion.div
+                        initial={{ opacity: 0, x: -40 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                    >
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-sm mb-6">
                             <Lock className="w-4 h-4" /> Sicherheit zuerst
                         </div>
@@ -73,9 +85,15 @@ export function FeatureSections() {
                         <Button variant="outline" className="border-cyan-500/30 text-cyan-400 hover:bg-cyan-500/10 rounded-full">
                             Mehr zum Sicherheitskonzept
                         </Button>
-                    </div>
+                    </motion.div>
 
-                    <div className="grid gap-4 w-full">
+                    <motion.div
+                        initial={{ opacity: 0, x: 40 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+                        className="grid gap-4 w-full"
+                    >
                         <div className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm w-full">
                             <h3 className="text-xl font-bold text-white mb-2">Klare Rollen</h3>
                             <p className="text-neutral-400 text-sm">Jeder Nutzer hat eine definierte Rolle. Jugendliche können keine Jobs einstellen, Auftraggeber können nicht suchen. Das verhindert Missbrauch.</p>
@@ -88,12 +106,18 @@ export function FeatureSections() {
                             <h3 className="text-xl font-bold text-white mb-2">Support & Mediation</h3>
                             <p className="text-neutral-400 text-sm">Sollte mal etwas nicht klappen, steht unser Support bereit. Wir vermitteln fair zwischen Jugendlichen und Auftraggebern.</p>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 
             {/* --- Sektion: So startest du (Stepper) --- */}
-            <section className="py-24 px-4 container mx-auto border-t border-white/5">
+            <motion.section
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                className="py-24 px-4 container mx-auto border-t border-white/5"
+            >
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">So startest du durch</h2>
                     <p className="text-neutral-400">In 3 einfachen Schritten zum Ziel.</p>
@@ -122,10 +146,10 @@ export function FeatureSections() {
 
                 <div className="text-center mt-16">
                     <Button size="lg" className="rounded-full px-8 bg-cyan-600 hover:bg-cyan-500 text-white shadow-[0_0_30px_-5px_rgba(8,145,178,0.6)]" asChild>
-                        <a href="https://dropbridge.app">Jetzt kostenlos registrieren</a>
+                        <a href="https://app.jobbridge.app">Jetzt kostenlos registrieren</a>
                     </Button>
                 </div>
-            </section>
+            </motion.section>
         </div>
     );
 }

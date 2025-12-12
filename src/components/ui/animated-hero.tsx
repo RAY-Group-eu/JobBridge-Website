@@ -22,7 +22,7 @@ function Hero() {
     return (
         <div className="w-full relative z-20">
             <div className="container mx-auto px-4">
-                <div className="flex gap-8 py-12 lg:py-24 items-center justify-center flex-col">
+                <div className="flex flex-col items-center justify-center text-center gap-6 pt-10 pb-24 md:pt-16 md:pb-32 lg:-mt-16">
                     <div>
                         <a
                             href="https://ray-group.eu"
@@ -70,7 +70,14 @@ function Hero() {
                                 Zur Plattform <MoveRight className="w-4 h-4" />
                             </a>
                         </Button>
-                        <Button size="lg" className="gap-3 rounded-full px-8 border-white/20 hover:bg-white/10 text-white" variant="outline">
+                        <Button
+                            size="lg"
+                            className="gap-3 rounded-full px-8 border-white/20 hover:bg-white/10 text-white cursor-pointer"
+                            variant="outline"
+                            onClick={() => {
+                                document.getElementById("how-it-works")?.scrollIntoView({ behavior: "smooth" });
+                            }}
+                        >
                             Mehr erfahren
                         </Button>
                     </div>

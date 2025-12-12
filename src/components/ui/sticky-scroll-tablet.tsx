@@ -36,12 +36,12 @@ export const StickyScrollTablet = ({
     // The container height determines how long we stay in the scroll phases.
 
     return (
-        <section ref={containerRef} className="relative h-[250vh] bg-neutral-950">
+        <section id="how-it-works" ref={containerRef} className="relative h-[250vh] bg-neutral-950">
             {/* Sticky Wrapper */}
-            <div className="sticky top-0 h-screen flex flex-col items-center justify-start pt-20 overflow-hidden">
+            <div className="sticky top-0 h-screen flex flex-col items-center justify-start pt-24 md:pt-32 overflow-hidden">
 
-                {/* Title Section - Fades out slightly as we go deep into phase 2? Or stays? User said "stays pinned". */}
-                <div className="relative z-20 mb-10 text-center px-4">
+                {/* Title Section */}
+                <div className="relative z-20 mb-8 text-center px-4">
                     {titleComponent}
                 </div>
 
@@ -52,11 +52,11 @@ export const StickyScrollTablet = ({
                         scale,
                         y: translateYEntry,
                         opacity,
-                        perspective: "1000px",
+                        perspective: "1200px",
                     }}
                     className="relative z-10"
                 >
-                    <div className="w-[90vw] md:w-[60rem] h-[60vh] md:h-[70vh] rounded-[30px] border-4 border-[#222] bg-[#111] shadow-2xl p-2 md:p-3 relative">
+                    <div className="w-[90vw] md:w-[60rem] h-[60vh] md:h-[70vh] rounded-[32px] bg-neutral-900 border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5),0_0_0_1px_rgba(255,255,255,0.05)] p-2 relative">
                         {/* Inner Frame (Screen) */}
                         <div className="w-full h-full rounded-[24px] overflow-hidden bg-neutral-900 border border-white/5 relative">
                             {/* Inner Content that scrolls */}

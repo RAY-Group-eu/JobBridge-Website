@@ -46,11 +46,11 @@ export function ShaderAnimation() {
           color = vec3(st.x, st.y, abs(sin(t)));
           
           // Smooth gradient effect
-          vec3 color1 = vec3(0.1, 0.1, 0.2); // Dark blueish
+          vec3 color1 = vec3(0.043, 0.086, 0.141); // Darker Blue/Cyan Base (#0b1624 approx)
           vec3 color2 = vec3(0.0, 0.0, 0.0); // Black
           
           float mixValue = distance(st, vec2(0.5, 0.5));
-          color = mix(color1, color2, mixValue * 2.0 + sin(t) * 0.2);
+          color = mix(color1, color2, mixValue * 1.5 + sin(t) * 0.2);
           
           // Subtle shimmer
           float shimmer = 0.0;
