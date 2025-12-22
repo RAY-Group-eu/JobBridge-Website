@@ -24,7 +24,7 @@ export default function ImpressumPage() {
                     <div className="space-y-1">
                         <h3 className="font-semibold text-cyan-200">Wichtiger Hinweis</h3>
                         <p className="text-sm text-cyan-100/80 leading-relaxed">
-                            Die folgenden Angaben sind ein Entwurf und wurden noch nicht durch eine Rechtsanwältin / einen Rechtsanwalt geprüft.
+                            Die folgenden Angaben sind ein Entwurf und wurden noch nicht geprüft.
                             Sie stellen keine Rechtsberatung dar und können unvollständig sein. Dieses Impressum wird vor dem offiziellen
                             Start von JobBridge aktualisiert.
                         </p>

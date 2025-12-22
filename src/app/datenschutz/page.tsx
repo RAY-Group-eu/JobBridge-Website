@@ -24,7 +24,7 @@ export default function DatenschutzPage() {
                     <div className="space-y-1">
                         <h3 className="font-semibold text-cyan-200">Entwurf / Status der Plattform</h3>
                         <p className="text-sm text-cyan-100/80 leading-relaxed">
-                            Hinweis: Diese Datenschutzhinweise sind ein Entwurf und wurden noch nicht durch eine Rechtsanwältin / einen Rechtsanwalt geprüft.
+                            Hinweis: Diese Datenschutzhinweise sind ein Entwurf und wurden noch nicht geprüft.
                             Vor einem offiziellen Start von JobBridge in Deutschland wird eine vollständige, rechtskonforme Datenschutzerklärung ergänzt.
                         </p>
                     </div>
