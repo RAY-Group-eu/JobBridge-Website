@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { MoveRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { reportConversion } from "@/lib/gtag";
 
 function Hero() {
     const [titleNumber, setTitleNumber] = useState(0);
@@ -66,7 +67,13 @@ function Hero() {
                             className="gap-3 rounded-full px-8 bg-white text-black hover:bg-white/90"
                             asChild
                         >
-                            <a href="https://app.jobbridge.app">
+                            <a
+                                href="https://app.jobbridge.app"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    reportConversion("https://app.jobbridge.app");
+                                }}
+                            >
                                 Zur Plattform <MoveRight className="w-4 h-4" />
                             </a>
                         </Button>
