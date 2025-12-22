@@ -3,6 +3,7 @@
 import { Shield, UserCheck, Users, Milestone, ArrowRight, Lock, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { reportConversion } from "@/lib/gtag";
 
 export function FeatureSections() {
     return (
@@ -146,7 +147,15 @@ export function FeatureSections() {
 
                 <div className="text-center mt-16">
                     <Button size="lg" className="rounded-full px-8 bg-cyan-600 hover:bg-cyan-500 text-white shadow-[0_0_30px_-5px_rgba(8,145,178,0.6)]" asChild>
-                        <a href="https://app.jobbridge.app">Jetzt kostenlos registrieren</a>
+                        <a
+                            href="https://app.jobbridge.app"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                reportConversion("https://app.jobbridge.app");
+                            }}
+                        >
+                            Jetzt kostenlos registrieren
+                        </a>
                     </Button>
                 </div>
             </motion.section>
