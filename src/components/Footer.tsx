@@ -8,7 +8,7 @@ export function Footer() {
             <div className="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center justify-between gap-6 text-neutral-500">
                 <div className="text-sm">
                     <span className="font-semibold text-white">JobBridge</span>{" "}
-                    – ein Projekt der Ray Group.
+                    - die digitale Taschengeldbörse
                 </div>
                 <div className="flex gap-8 text-sm">
                     <a

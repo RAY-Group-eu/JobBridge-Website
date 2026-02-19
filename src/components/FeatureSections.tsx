@@ -1,13 +1,13 @@
 "use client";
 
-import { Shield, UserCheck, Users, Milestone, ArrowRight, Lock, CheckCircle2 } from "lucide-react";
+import { Shield, UserCheck, Users, Lock, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { reportConversion } from "@/lib/gtag";
 
 export function FeatureSections() {
     return (
-        <div className="bg-neutral-950 w-full relative z-10">
+        <div className="relative z-10 w-full bg-neutral-950">
 
             {/* --- Sektion: Für wen ist JobBridge? --- */}
             <motion.section
@@ -15,7 +15,7 @@ export function FeatureSections() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="py-24 px-4 container mx-auto"
+                className="container mx-auto px-5 pb-24 pt-12 md:px-6 md:pt-14"
             >
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Für wen ist JobBridge?</h2>
@@ -50,7 +50,7 @@ export function FeatureSections() {
             {/* --- Sektion: Sicherheit & Vertrauen --- */}
             <section className="py-24 border-t border-white/5 relative overflow-hidden">
                 <div className="absolute inset-0 bg-cyan-900/5 pointer-events-none" />
-                <div className="container mx-auto px-4 grid md:grid-cols-2 gap-16 items-start relative z-10">
+                <div className="container mx-auto grid items-start gap-16 px-5 md:grid-cols-2 md:px-6 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, x: -40 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -117,7 +117,7 @@ export function FeatureSections() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="py-24 px-4 container mx-auto border-t border-white/5"
+                className="container mx-auto border-t border-white/5 px-5 py-24 md:px-6"
             >
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">So startest du durch</h2>
@@ -146,7 +146,7 @@ export function FeatureSections() {
                 </div>
 
                 <div className="text-center mt-16">
-                    <Button size="lg" className="rounded-full px-8 bg-cyan-600 hover:bg-cyan-500 text-white shadow-[0_0_30px_-5px_rgba(8,145,178,0.6)]" asChild>
+                    <Button size="lg" className="rounded-full px-8 bg-cyan-600 hover:bg-cyan-500 text-white" asChild>
                         <a
                             href="https://app.jobbridge.app"
                             onClick={(e) => {

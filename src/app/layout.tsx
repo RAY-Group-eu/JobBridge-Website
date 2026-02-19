@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google"; // Use Inter as standard font or similar
 import "./globals.css";
-import { cn } from "@/lib/utils";
 import Script from "next/script";
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
     title: "JobBridge - Taschengeldjobs sicher & fair",
@@ -18,7 +14,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="de" className="dark">
-            <body className={cn("min-h-screen bg-background font-sans antialiased", inter.variable)}>
+            <body className="min-h-screen bg-background font-sans antialiased">
                 <Script
                     src="https://www.googletagmanager.com/gtag/js?id=AW-17814899877"
                     strategy="afterInteractive"

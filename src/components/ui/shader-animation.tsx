@@ -8,13 +8,14 @@ export function ShaderAnimation() {
 
     useEffect(() => {
         if (!containerRef.current) return;
+        const container = containerRef.current;
 
         const scene = new THREE.Scene();
         const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
         const renderer = new THREE.WebGLRenderer({ alpha: true });
 
         renderer.setSize(window.innerWidth, window.innerHeight);
-        containerRef.current.appendChild(renderer.domElement);
+        container.appendChild(renderer.domElement);
 
         const geometry = new THREE.PlaneGeometry(2, 2);
         const uniforms = {
@@ -86,9 +87,7 @@ export function ShaderAnimation() {
         return () => {
             window.removeEventListener("resize", handleResize);
             cancelAnimationFrame(animationId);
-            if (containerRef.current) {
-                containerRef.current.removeChild(renderer.domElement);
-            }
+            container.removeChild(renderer.domElement);
             geometry.dispose();
             material.dispose();
             renderer.dispose();

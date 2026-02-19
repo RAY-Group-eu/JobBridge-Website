@@ -1,8 +1,10 @@
 export { };
 
+type GtagArg = string | number | boolean | Date | null | undefined | Record<string, unknown>;
+
 declare global {
     interface Window {
-        dataLayer: any[];
-        gtag: (...args: any[]) => void;
+        dataLayer: unknown[];
+        gtag: (...args: GtagArg[]) => void;
     }
 }

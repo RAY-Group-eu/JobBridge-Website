@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { MoveRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { reportConversion } from "@/lib/gtag";
+import { homePageConfig } from "@/config/site";
 
 function Hero() {
     const [titleNumber, setTitleNumber] = useState(0);
@@ -23,17 +24,19 @@ function Hero() {
     return (
         <div className="w-full relative z-20">
             <div className="container mx-auto px-4">
-                <div className="flex flex-col items-center justify-center text-center gap-6 pt-10 pb-24 md:pt-16 md:pb-32 lg:-mt-16">
-                    <div>
-                        <a
-                            href="https://ray-group.eu"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center rounded-full border border-white/10 bg-white/5 backdrop-blur px-3 py-1 text-sm text-white hover:bg-white/10 transition-colors cursor-pointer"
-                        >
-                            Ein Projekt der Ray Group <MoveRight className="ml-2 w-4 h-4" />
-                        </a>
-                    </div>
+                <div className="flex flex-col items-center justify-center gap-6 py-4 text-center md:py-6">
+                    {homePageConfig.showRayGroupBadgeInHero && (
+                        <div>
+                            <a
+                                href="https://ray-group.eu"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center rounded-full border border-white/10 bg-white/5 backdrop-blur px-3 py-1 text-sm text-white hover:bg-white/10 transition-colors cursor-pointer"
+                            >
+                                Ein Projekt der Ray Group <MoveRight className="ml-2 w-4 h-4" />
+                            </a>
+                        </div>
+                    )}
                     <div className="flex gap-4 flex-col">
                         <h1 className="text-4xl md:text-6xl max-w-4xl tracking-tight text-center font-semibold text-white leading-tight">
                             JobBridge verbindet Jugendliche und Auftraggeber –
