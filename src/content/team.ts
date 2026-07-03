@@ -186,6 +186,65 @@ export const teamMembers = [
         ],
         sameAs: ["https://jobbridge.app/team/tim-lohmeier"],
     },
+    {
+        slug: "tobias-rohm",
+        name: "Tobias Rohm",
+        displayName: "Tobias Rohm",
+        shortName: "Tobias",
+        role: "Content & Social Media Manager",
+        description:
+            "Tobias arbeitet in der Abteilung Marketing und Kommunikation als Content & Social Media Manager und macht JobBridge auf den richtigen Kanälen verständlich.",
+        profileIntro:
+            "JobBridge braucht nicht nur eine gute Plattform, sondern auch klare Kommunikation. Tobias arbeitet in der Abteilung Marketing und Kommunikation daran, Inhalte, Social-Media-Auftritte und öffentliche Botschaften so aufzubereiten, dass die Idee hinter JobBridge verständlich bleibt und die richtigen Menschen erreicht.",
+        location: "JobBridge GmbH | Rheinbach",
+        profilePath: "/team/tobias-rohm",
+        focus: [
+            "Content-Planung für JobBridge und öffentliche Updates",
+            "Social-Media-Kommunikation für Jugendliche, Eltern und Auftraggeber",
+            "Marketing und Kommunikation rund um die digitale Taschengeldbörse",
+        ],
+        contactLinks: [
+            {
+                kind: "direct-email",
+                label: "E-Mail",
+                value: "tobias.rohm@jobbridge.team",
+                description: "Direkter Kontakt zu Tobias.",
+                href: "mailto:tobias.rohm@jobbridge.team",
+            },
+        ],
+        profileLinks: [
+            {
+                label: "E-Mail",
+                value: "tobias.rohm@jobbridge.team",
+                description: "Direkter Kontakt zu Tobias.",
+                href: "mailto:tobias.rohm@jobbridge.team",
+            },
+            {
+                label: "Arbeitsort",
+                value: "JobBridge GmbH | Rheinbach",
+                description: "Arbeitsort und lokaler Bezug der Rolle.",
+            },
+            {
+                label: "Abteilung",
+                value: "Marketing und Kommunikation",
+                description: "Schwerpunkt in Content, Social Media und externer Kommunikation.",
+            },
+            {
+                label: "Adresse",
+                value: "Rheinbach",
+                description: "Geschäftlicher Standort.",
+            },
+        ],
+        knowsAbout: [
+            "Content",
+            "Social Media",
+            "Marketing und Kommunikation",
+            "JobBridge",
+            "digitale Taschengeldbörse",
+            "Rheinbach",
+        ],
+        sameAs: ["https://jobbridge.app/team/tobias-rohm"],
+    },
 ] as const satisfies TeamMember[];
 
 export type TeamMemberSlug = (typeof teamMembers)[number]["slug"];

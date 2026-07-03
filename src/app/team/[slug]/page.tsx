@@ -17,7 +17,7 @@ type TeamProfileRouteProps = {
     }>;
 };
 
-const customTeamSlugs = new Set(["rezan", "resan-yalcin", "rezan-yalcin", "tim-lohmeier"]);
+const customTeamSlugs = new Set(["rezan", "resan-yalcin", "rezan-yalcin", "tim-lohmeier", "tobias-rohm"]);
 
 export const dynamicParams = false;
 
