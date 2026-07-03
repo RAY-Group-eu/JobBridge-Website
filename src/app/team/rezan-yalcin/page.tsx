@@ -67,7 +67,11 @@ export const metadata: Metadata = {
     },
 };
 
-const profileImageSrc = "/insights/wdr-studiogespraech-rezan-yalcin-clean.png";
+const profileImage = member?.profileImage ?? {
+    src: "/team/rezan-yalcin-profile.jpeg",
+    alt: "Porträt von Rezan Yalcin im Radiostudio.",
+    position: "57% 35%",
+};
 
 export default function RezanYalcinProfilePage() {
     if (!member) {
@@ -135,7 +139,7 @@ export default function RezanYalcinProfilePage() {
             description: member.profileIntro,
             url: profileUrl,
             ...(directEmail ? { email: directEmail } : {}),
-            image: `${siteConfig.url}${profileImageSrc}`,
+            image: `${siteConfig.url}${profileImage.src}`,
             sameAs: member.sameAs,
             knowsAbout: member.knowsAbout,
             worksFor: {
@@ -181,12 +185,12 @@ export default function RezanYalcinProfilePage() {
                                         <div className="relative overflow-hidden rounded-[0.95rem] border border-white/10 bg-[#070b13] p-1 shadow-[0_18px_48px_rgba(0,0,0,0.24)]">
                                             <div className="relative aspect-[4/5] overflow-hidden rounded-[0.7rem] bg-[#050912]">
                                                 <Image
-                                                    src={profileImageSrc}
-                                                    alt="Porträt von Rezan Yalcin."
+                                                    src={profileImage.src}
+                                                    alt={profileImage.alt}
                                                     fill
                                                     sizes="8.25rem"
                                                     className="object-cover"
-                                                    style={{ objectPosition: "47% 50%" }}
+                                                    style={{ objectPosition: profileImage.position }}
                                                     priority
                                                 />
                                             </div>
@@ -232,12 +236,12 @@ export default function RezanYalcinProfilePage() {
                                 <div className="relative overflow-hidden rounded-[1.15rem] border border-white/10 bg-[#070b13] p-1.5 shadow-[0_18px_48px_rgba(0,0,0,0.24)]">
                                     <div className="relative aspect-[4/5] overflow-hidden rounded-[0.85rem] bg-[#050912]">
                                         <Image
-                                            src={profileImageSrc}
-                                            alt="Porträt von Rezan Yalcin."
+                                            src={profileImage.src}
+                                            alt={profileImage.alt}
                                             fill
                                             sizes="(min-width: 1024px) 28vw, 100vw"
                                             className="object-cover"
-                                            style={{ objectPosition: "47% 50%" }}
+                                            style={{ objectPosition: profileImage.position }}
                                             priority
                                         />
                                     </div>

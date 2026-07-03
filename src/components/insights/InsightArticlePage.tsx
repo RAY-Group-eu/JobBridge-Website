@@ -53,7 +53,7 @@ export function InsightArticlePage({ article }: InsightArticlePageProps) {
 
                             <div className="grid gap-10 lg:grid-cols-[minmax(0,0.96fr)_minmax(27rem,0.8fr)] lg:items-center lg:gap-14">
                                 <div className="min-w-0">
-                                    <h1 className="max-w-[12.8ch] text-pretty text-[clamp(3.1rem,4.85vw,5.55rem)] font-semibold leading-[0.91] tracking-[-0.055em] text-white">
+                                    <h1 className="max-w-[16.5ch] text-balance font-sans text-[clamp(3.05rem,6.1vw,6.95rem)] font-bold leading-[0.92] tracking-[-0.052em] text-white">
                                         {article.title}
                                     </h1>
 

@@ -45,9 +45,9 @@ export const teamMembers = [
         location: "Rheinbach, Deutschland",
         profilePath: "/team/rezan-yalcin",
         profileImage: {
-            src: "/insights/wdr-studiogespraech-rezan-yalcin-clean.png",
-            alt: "Porträt von Rezan Yalcin.",
-            position: "47% 50%",
+            src: "/team/rezan-yalcin-profile.jpeg",
+            alt: "Porträt von Rezan Yalcin im Radiostudio.",
+            position: "57% 35%",
         },
         focus: [
             "Produktentwicklung und Nutzerführung",
