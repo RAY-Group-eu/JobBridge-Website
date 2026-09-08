@@ -1,7 +1,8 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { Loader2, MessageCircle } from "lucide-react";
+import { Loader2, Mail, MessageCircle } from "lucide-react";
+import { siteConfig } from "@/config/site";
 
 const CHAT_SCRIPT_ID = "chatbot";
 const CHAT_WIDGET_STYLE_ID = "workfare-chat-widget-overrides";
@@ -290,23 +291,32 @@ export function FooterChat() {
                             Fragen zu Workfare?
                         </h2>
                         <p className="mt-1.5 text-sm leading-6 text-neutral-400">
-                            Öffnet den Chat direkt auf dieser Seite.
+                            Schreib uns per E-Mail oder öffne den Chat direkt auf dieser Seite.
                         </p>
                     </div>
 
-                    <button
-                        type="button"
-                        onClick={openChat}
-                        disabled={isLoading}
-                        className="inline-flex h-10 w-full items-center justify-center gap-2 rounded-full border border-white/10 bg-white px-4 text-sm font-medium text-neutral-950 shadow-[0_14px_36px_rgba(255,255,255,0.08)] transition hover:bg-cyan-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-200 focus-visible:ring-offset-2 focus-visible:ring-offset-black disabled:pointer-events-none disabled:opacity-70 sm:w-auto"
-                    >
-                        {isLoading ? (
-                            <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
-                        ) : (
-                            <MessageCircle className="h-4 w-4" aria-hidden="true" />
-                        )}
-                        {getButtonLabel(status)}
-                    </button>
+                    <div className="flex w-full flex-col gap-3 sm:w-auto sm:shrink-0 sm:flex-row">
+                        <a
+                            href={`mailto:${siteConfig.contactEmail}`}
+                            className="inline-flex h-10 items-center justify-center gap-2 rounded-full border border-white/20 px-4 text-sm font-medium text-white transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-200 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                        >
+                            <Mail className="h-4 w-4" aria-hidden="true" />
+                            E-Mail schreiben
+                        </a>
+                        <button
+                            type="button"
+                            onClick={openChat}
+                            disabled={isLoading}
+                            className="inline-flex h-10 w-full items-center justify-center gap-2 rounded-full border border-white/10 bg-white px-4 text-sm font-medium text-neutral-950 shadow-[0_14px_36px_rgba(255,255,255,0.08)] transition hover:bg-cyan-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-200 focus-visible:ring-offset-2 focus-visible:ring-offset-black disabled:pointer-events-none disabled:opacity-70 sm:w-auto"
+                        >
+                            {isLoading ? (
+                                <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
+                            ) : (
+                                <MessageCircle className="h-4 w-4" aria-hidden="true" />
+                            )}
+                            {getButtonLabel(status)}
+                        </button>
+                    </div>
                 </div>
             </section>
         </>
