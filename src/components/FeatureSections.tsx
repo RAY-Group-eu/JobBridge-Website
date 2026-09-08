@@ -63,7 +63,7 @@ const safetySlides: Array<{
     {
         title: "Moderierter Zugang",
         description:
-            "JobBridge ist als digitale Taschengeldbörse für Jugendliche ab 14 gedacht: nicht offen, laut und beliebig, sondern geführt, transparent und mit klaren Rollen.",
+            "Workfare ist als digitale Taschengeldbörse für Jugendliche ab 14 gedacht: nicht offen, laut und beliebig, sondern geführt, transparent und mit klaren Rollen.",
         accent: "bg-[radial-gradient(circle_at_50%_48%,#35ff6b_0%,#22e56b_45%,#18a88e_100%)]",
         glyph: "nodes",
     },
@@ -164,7 +164,7 @@ export function FeatureSections() {
     return (
         <div className="relative z-10 w-full bg-neutral-950">
 
-            {/* --- Sektion: Für wen ist JobBridge? --- */}
+            {/* --- Sektion: Für wen ist Workfare? --- */}
             <section
                 id="fuer-wen"
                 className="relative overflow-hidden px-5 pb-24 pt-20 md:px-8 md:pb-32 md:pt-24"
@@ -219,7 +219,7 @@ export function FeatureSections() {
                                 <span className="text-white/34"> entsteht</span>
                             </h2>
                             <p className="mt-6 max-w-[42rem] text-[1.05rem] leading-8 text-neutral-400 md:text-[1.2rem]">
-                                JobBridge übersetzt die Idee der Taschengeldbörse in eine digitale Plattform:
+                                Workfare übersetzt die Idee der Taschengeldbörse in eine digitale Plattform:
                                 moderiert, transparent und mit Schutz für sensible Situationen.
                             </p>
                         </div>
@@ -378,7 +378,7 @@ export function FeatureSections() {
                     <a
                         href="https://app.jobbridge.app"
                         className="group relative flex h-[6.25rem] w-full max-w-[42rem] items-center overflow-hidden rounded-full bg-[#202020] p-3 text-white shadow-[0_24px_80px_rgba(0,0,0,0.38)] outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-4 focus-visible:ring-offset-neutral-950 md:h-[8.25rem] md:p-4"
-                        aria-label="Zur JobBridge Plattform"
+                        aria-label="Zur Workfare Plattform"
                     >
                         <span
                             aria-hidden="true"

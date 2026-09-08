@@ -10,7 +10,7 @@ type LegalNavItem = {
 };
 
 const headingHighlightClass = "legal-heading-highlight";
-const legalHighlightEventName = "jobbridge:legal-section-highlight";
+const legalHighlightEventName = "workfare:legal-section-highlight";
 let activeScrollFrame: number | null = null;
 
 function easeOutCubic(progress: number) {

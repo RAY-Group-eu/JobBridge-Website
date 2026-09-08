@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { Loader2, MessageCircle } from "lucide-react";
 
 const CHAT_SCRIPT_ID = "chatbot";
-const CHAT_WIDGET_STYLE_ID = "jobbridge-chat-widget-overrides";
+const CHAT_WIDGET_STYLE_ID = "workfare-chat-widget-overrides";
 const CHAT_SCRIPT_SRC =
     "https://res.public.onecdn.static.microsoft/customerconnect/v1/7dttl/init.js";
 const CHAT_ENVIRONMENT_ID = "5775358a-419f-e9cd-b8ef-33eda7dcd054";
@@ -89,28 +89,28 @@ function relabelTeamsWidget() {
     const teamsButton = getTeamsButton();
 
     if (teamsButton) {
-        if (teamsButton.alt !== "JobBridge Chat öffnen") {
-            teamsButton.alt = "JobBridge Chat öffnen";
+        if (teamsButton.alt !== "Workfare Chat öffnen") {
+            teamsButton.alt = "Workfare Chat öffnen";
         }
 
-        if (teamsButton.ariaLabel !== "JobBridge Chat öffnen") {
-            teamsButton.ariaLabel = "JobBridge Chat öffnen";
+        if (teamsButton.ariaLabel !== "Workfare Chat öffnen") {
+            teamsButton.ariaLabel = "Workfare Chat öffnen";
         }
 
-        if (teamsButton.title !== "JobBridge Chat öffnen") {
-            teamsButton.title = "JobBridge Chat öffnen";
+        if (teamsButton.title !== "Workfare Chat öffnen") {
+            teamsButton.title = "Workfare Chat öffnen";
         }
     }
 
     const iframe = getTeamsIframe();
 
     if (iframe) {
-        if (iframe.title !== "JobBridge Chat") {
-            iframe.title = "JobBridge Chat";
+        if (iframe.title !== "Workfare Chat") {
+            iframe.title = "Workfare Chat";
         }
 
-        if (iframe.getAttribute("aria-label") !== "JobBridge Chat") {
-            iframe.setAttribute("aria-label", "JobBridge Chat");
+        if (iframe.getAttribute("aria-label") !== "Workfare Chat") {
+            iframe.setAttribute("aria-label", "Workfare Chat");
         }
     }
 }
@@ -280,14 +280,14 @@ export function FooterChat() {
         <>
             <style id={CHAT_WIDGET_STYLE_ID}>{CHAT_WIDGET_OVERRIDE_CSS}</style>
             <section
-                aria-label="JobBridge Chat"
+                aria-label="Workfare Chat"
                 data-chatclient-host
                 className="relative z-20 bg-black px-4 py-10 md:py-12"
             >
                 <div className="mx-auto flex max-w-7xl flex-col gap-5 rounded-2xl border border-white/10 bg-white/[0.025] px-5 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-6">
                     <div className="max-w-xl">
                         <h2 className="text-[1.05rem] font-medium tracking-[-0.02em] text-white">
-                            Fragen zu JobBridge?
+                            Fragen zu Workfare?
                         </h2>
                         <p className="mt-1.5 text-sm leading-6 text-neutral-400">
                             Öffnet den Chat direkt auf dieser Seite.

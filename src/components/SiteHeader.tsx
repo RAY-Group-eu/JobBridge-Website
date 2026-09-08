@@ -7,7 +7,7 @@ export function SiteHeader({ className = "" }: { className?: string }) {
         <header className={`flex items-center justify-between ${className}`}>
             <Link
                 href="/"
-                aria-label="JobBridge Startseite"
+                aria-label="Workfare Startseite"
                 className="group inline-flex items-center gap-3 rounded-[1.25rem] outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#02040b]"
             >
                 <span className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-[1.15rem] border border-white/10 bg-white/[0.045] shadow-[0_12px_36px_rgba(2,6,23,0.2)]">
@@ -23,7 +23,7 @@ export function SiteHeader({ className = "" }: { className?: string }) {
                     />
                 </span>
                 <span className="text-[1.05rem] font-semibold tracking-[-0.015em] text-white transition group-hover:text-blue-100">
-                    JobBridge
+                    Workfare
                 </span>
             </Link>
 

@@ -78,9 +78,9 @@ function useStableSectionProgress(containerRef: React.RefObject<HTMLDivElement |
             const mobileSectionHeight = Math.round(stableViewportHeight * MOBILE_SECTION_LENGTH);
             const mobileTabletHeight = Math.round(stableViewportHeight * MOBILE_TABLET_HEIGHT_RATIO);
 
-            section.style.setProperty("--jobbridge-stable-vh", `${stableViewportHeight}px`);
-            section.style.setProperty("--jobbridge-section-height", `${mobileSectionHeight}px`);
-            section.style.setProperty("--jobbridge-tablet-height", `${mobileTabletHeight}px`);
+            section.style.setProperty("--workfare-stable-vh", `${stableViewportHeight}px`);
+            section.style.setProperty("--workfare-section-height", `${mobileSectionHeight}px`);
+            section.style.setProperty("--workfare-tablet-height", `${mobileTabletHeight}px`);
 
             window.requestAnimationFrame(() => {
                 const sectionTop = section.getBoundingClientRect().top + window.scrollY;
@@ -180,11 +180,11 @@ export const StickyScrollTablet = ({ titleComponent, children }: StickyScrollTab
         <section
             id="how-it-works"
             ref={containerRef}
-            className="relative h-[var(--jobbridge-section-height,340svh)] overflow-clip bg-[radial-gradient(circle_at_50%_-8%,#0d1a2c_0%,#070d19_42%,#02040b_100%)] md:h-[520vh]"
+            className="relative h-[var(--workfare-section-height,340svh)] overflow-clip bg-[radial-gradient(circle_at_50%_-8%,#0d1a2c_0%,#070d19_42%,#02040b_100%)] md:h-[520vh]"
         >
             <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(2,4,11,0.85)_0%,rgba(2,4,11,0.5)_50%,rgba(2,4,11,0.9)_100%)]" />
 
-            <div className="sticky top-0 flex h-[var(--jobbridge-stable-vh,100svh)] flex-col items-center justify-center overflow-hidden px-0 pb-0 md:h-[100vh] md:px-8 md:pb-10">
+            <div className="sticky top-0 flex h-[var(--workfare-stable-vh,100svh)] flex-col items-center justify-center overflow-hidden px-0 pb-0 md:h-[100vh] md:px-8 md:pb-10">
                 {titleComponent ? (
                     <div className="relative z-20 mb-3 max-w-4xl px-4 text-center md:mb-4">
                         {titleComponent}
@@ -206,7 +206,7 @@ export const StickyScrollTablet = ({ titleComponent, children }: StickyScrollTab
                     className="relative z-10 w-full max-w-[30rem] px-4 md:w-[min(98vw,90rem)] md:max-w-none md:px-0"
                 >
                     <div className="relative rounded-[2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(14,18,27,0.99),rgba(7,10,17,0.99))] shadow-[0_38px_96px_-44px_rgba(2,5,15,1),0_12px_26px_rgba(2,5,15,0.38)] md:rounded-[3rem] md:p-4 md:shadow-[0_56px_124px_-46px_rgba(2,5,15,1),0_12px_26px_rgba(2,5,15,0.45)]">
-                        <div className="relative h-[var(--jobbridge-tablet-height,82svh)] min-h-[540px] max-h-[720px] overflow-hidden rounded-[1.85rem] border border-white/[0.025] bg-[#030817] md:h-[79vh] md:min-h-[620px] md:max-h-[86vh] md:rounded-[2.5rem]">
+                        <div className="relative h-[var(--workfare-tablet-height,82svh)] min-h-[540px] max-h-[720px] overflow-hidden rounded-[1.85rem] border border-white/[0.025] bg-[#030817] md:h-[79vh] md:min-h-[620px] md:max-h-[86vh] md:rounded-[2.5rem]">
                             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_0%,rgba(148,163,184,0.06),transparent_42%),linear-gradient(180deg,rgba(3,8,23,0.9),rgba(3,8,23,0.86))]" />
                             <motion.div
                                 aria-hidden

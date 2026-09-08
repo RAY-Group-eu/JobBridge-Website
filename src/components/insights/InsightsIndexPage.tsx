@@ -25,7 +25,7 @@ export function InsightsIndexPage() {
                     <div className="flex min-h-[76svh] items-center py-20 sm:py-24 lg:py-28">
                         <div className="w-full max-w-[52rem]">
                             <Image
-                                src="/jobbridge-bridge-logo-white.png"
+                                src="/workfare-mark-white.png"
                                 alt=""
                                 width={118}
                                 height={60}
@@ -40,7 +40,7 @@ export function InsightsIndexPage() {
                             </h1>
 
                             <p className="mt-8 max-w-[37rem] text-pretty text-[clamp(1.08rem,1.45vw,1.48rem)] font-medium leading-[1.32] tracking-[-0.02em] text-[#8c94a1]">
-                                <span className="text-white">JobBridge sammelt, was über die Plattform entsteht:</span>{" "}
+                                <span className="text-white">Workfare sammelt, was über die Plattform entsteht:</span>{" "}
                                 eigene Beiträge, Medienberichte und Updates aus der Arbeit dahinter.
                             </p>
 

@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     metadataBase: new URL(SITE_URL),
     title: {
         default: `${siteConfig.name} – ${siteConfig.defaultTitle}`,
-        template: "%s | JobBridge",
+        template: `%s | ${siteConfig.name}`,
     },
     description: siteConfig.defaultDescription,
     applicationName: siteConfig.name,
@@ -97,7 +97,7 @@ const websiteJsonLd = {
     "@type": "WebSite",
     "@id": `${SITE_URL}/#website`,
     name: siteConfig.name,
-    alternateName: ["JobBridge Taschengeldbörse", "Digitale Taschengeldbörse"],
+    alternateName: ["Workfare Taschengeldbörse", "Digitale Taschengeldbörse"],
     url: SITE_URL,
     description: siteConfig.defaultDescription,
     inLanguage: "de-DE",
@@ -115,8 +115,8 @@ const organizationJsonLd = {
     logo: {
         "@type": "ImageObject",
         url: `${SITE_URL}/og-image.png`,
-        width: 1024,
-        height: 1024,
+        width: 1200,
+        height: 630,
     },
     image: `${SITE_URL}/og-image.png`,
     description: siteConfig.defaultDescription,

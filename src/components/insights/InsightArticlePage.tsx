@@ -70,7 +70,7 @@ export function InsightArticlePage({ article }: InsightArticlePageProps) {
                                                 {author.displayName}
                                             </Link>
                                         ) : (
-                                            <span>JobBridge</span>
+                                            <span>Workfare</span>
                                         )}
                                         <span className="h-1 w-1 rounded-full bg-slate-600" />
                                         <time dateTime={article.publishedAt}>{formatInsightDate(article.publishedAt)}</time>

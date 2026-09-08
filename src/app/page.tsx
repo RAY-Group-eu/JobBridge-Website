@@ -7,7 +7,7 @@ import { Footer } from "@/components/Footer";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-    title: siteConfig.defaultTitle,
+    title: { absolute: `${siteConfig.name} – ${siteConfig.defaultTitle}` },
     description: siteConfig.defaultDescription,
     alternates: {
         canonical: "/",

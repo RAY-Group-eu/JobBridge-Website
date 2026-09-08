@@ -13,7 +13,7 @@ export function Footer({ showChat = true }: { showChat?: boolean }) {
                 <div className="mx-auto flex max-w-7xl flex-col gap-8 px-4 pb-12 pt-8">
                     <div className="flex flex-col items-center justify-between gap-6 text-neutral-500 md:flex-row">
                         <div className="text-sm">
-                            <span className="font-semibold text-white">JobBridge</span>{" "}
+                            <span className="font-semibold text-white">Workfare</span>{" "}
                             – die digitale Taschengeldbörse für Deutschland
                         </div>
                         <nav aria-label="Footer-Navigation" className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm">

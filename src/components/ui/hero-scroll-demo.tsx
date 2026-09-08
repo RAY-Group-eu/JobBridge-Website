@@ -323,7 +323,7 @@ function ApplyPanel({ compact = false }: { compact?: boolean }) {
 
                 <div className="mt-6 flex flex-col gap-4 border-t border-white/8 pt-5 sm:flex-row sm:items-end sm:justify-between sm:gap-5">
                     <p className="hidden max-w-[15rem] text-[0.9rem] leading-relaxed text-white/42 sm:block">
-                        Die Nachricht bleibt direkt in JobBridge nachvollziehbar.
+                        Die Nachricht bleibt direkt in Workfare nachvollziehbar.
                     </p>
                     <button
                         type="button"
@@ -353,7 +353,7 @@ function SuccessPanel({ compact = false, frameless = false }: { compact?: boolea
                 Anfrage gesendet
             </p>
             <p className="mt-3 max-w-[23rem] text-[0.98rem] leading-relaxed text-white/48">
-                Der Auftraggeber kann jetzt direkt in JobBridge antworten.
+                Der Auftraggeber kann jetzt direkt in Workfare antworten.
             </p>
         </div>
     );
@@ -434,7 +434,7 @@ function DesktopFlow({
                                     <div className="relative">
                                         <p className="text-[1.18rem] font-semibold tracking-[-0.025em] text-white">Geprüfter Job</p>
                                         <p className="mt-1.5 max-w-[28rem] text-[0.92rem] leading-relaxed text-slate-400">
-                                            Vom JobBridge-Team geprüft und freigegeben.
+                                            Vom Workfare-Team geprüft und freigegeben.
                                         </p>
                                     </div>
                                 </div>
@@ -462,7 +462,7 @@ function DesktopFlow({
                         <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-6 border-t border-white/8 bg-[#081225]/95 px-8 py-3.5 xl:px-10">
                             <div>
                                 <p className="text-[1.03rem] text-slate-300">Interesse geweckt?</p>
-                                <p className="mt-1 text-[0.86rem] text-slate-500">Die Bewerbung läuft direkt über JobBridge.</p>
+                                <p className="mt-1 text-[0.86rem] text-slate-500">Die Bewerbung läuft direkt über Workfare.</p>
                             </div>
                             <button
                                 type="button"

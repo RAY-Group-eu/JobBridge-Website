@@ -24,7 +24,7 @@ export function GET() {
                     height: "100%",
                     justifyContent: "center",
                     letterSpacing: 0,
-                    padding: "72px",
+                    padding: "64px",
                     width: "100%",
                 }}
             >
@@ -37,7 +37,7 @@ export function GET() {
                         flexDirection: "column",
                         height: "100%",
                         justifyContent: "space-between",
-                        padding: "56px",
+                        padding: "40px",
                         width: "100%",
                     }}
                 >
@@ -45,25 +45,25 @@ export function GET() {
                         style={{
                             alignItems: "center",
                             display: "flex",
-                            fontSize: 34,
+                            fontSize: 32,
                             fontWeight: 700,
                             justifyContent: "space-between",
                             width: "100%",
                         }}
                     >
-                        <span>JobBridge</span>
-                        <span style={{ color: "#bfdbfe", fontSize: 28, fontWeight: 500 }}>
+                        <span>Workfare</span>
+                        <span style={{ color: "#bfdbfe", fontSize: 22, fontWeight: 500 }}>
                             Die digitale Taschengeldbörse
                         </span>
                     </div>
 
-                    <div style={{ display: "flex", flexDirection: "column", gap: 26, width: "100%" }}>
+                    <div style={{ display: "flex", flexDirection: "column", gap: 20, width: "100%" }}>
                         <div
                             style={{
-                                fontSize: 88,
+                                fontSize: 72,
                                 fontWeight: 800,
-                                lineHeight: 0.96,
-                                maxWidth: 860,
+                                lineHeight: 1.02,
+                                maxWidth: 940,
                             }}
                         >
                             Sichere Taschengeldjobs für Jugendliche
@@ -71,9 +71,9 @@ export function GET() {
                         <div
                             style={{
                                 color: "#dbeafe",
-                                fontSize: 36,
-                                lineHeight: 1.28,
-                                maxWidth: 880,
+                                fontSize: 28,
+                                lineHeight: 1.25,
+                                maxWidth: 840,
                             }}
                         >
                             Verifizierte Auftraggeber, klare Freigaben und volle Transparenz für Eltern.
@@ -85,13 +85,13 @@ export function GET() {
                             alignItems: "center",
                             color: "#67e8f9",
                             display: "flex",
-                            fontSize: 28,
+                            fontSize: 22,
                             fontWeight: 700,
                             justifyContent: "space-between",
                             width: "100%",
                         }}
                     >
-                        <span>jobbridge.app</span>
+                        <span>workfa.re</span>
                         <span>Deutschlandweit gedacht</span>
                     </div>
                 </div>

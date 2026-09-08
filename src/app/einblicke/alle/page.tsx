@@ -10,16 +10,16 @@ import { siteConfig } from "@/config/site";
 import { serializeJsonLd } from "@/lib/json-ld";
 
 export const metadata: Metadata = {
-    title: `Alle Einblicke | ${siteConfig.name}`,
+    title: "Alle Einblicke",
     description:
-        "Alle JobBridge-Einblicke an einem Ort: eigene Beiträge, Medienberichte und Updates zur Plattform.",
+        "Alle Workfare-Einblicke an einem Ort: eigene Beiträge, Medienberichte und Updates zur Plattform.",
     alternates: {
         canonical: `${insightsPage.path}/alle`,
     },
     openGraph: {
         title: `Alle Einblicke | ${siteConfig.name}`,
         description:
-            "Alle JobBridge-Einblicke an einem Ort: eigene Beiträge, Medienberichte und Updates zur Plattform.",
+            "Alle Workfare-Einblicke an einem Ort: eigene Beiträge, Medienberichte und Updates zur Plattform.",
         url: `${insightsPage.path}/alle`,
         type: "website",
         images: [{ url: "/og-image.png", width: 1200, height: 630, alt: siteConfig.name }],
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: `Alle Einblicke | ${siteConfig.name}`,
         description:
-            "Alle JobBridge-Einblicke an einem Ort: eigene Beiträge, Medienberichte und Updates zur Plattform.",
+            "Alle Workfare-Einblicke an einem Ort: eigene Beiträge, Medienberichte und Updates zur Plattform.",
         images: ["/og-image.png"],
     },
 };
@@ -78,7 +78,7 @@ export default function AllInsightsPage() {
                                 Alle Einblicke.
                             </h1>
                             <p className="mt-8 max-w-2xl text-xl font-medium leading-8 tracking-[-0.03em] text-slate-300">
-                                Alle Beiträge, Medienberichte und eigenen Texte zu JobBridge gesammelt an einem Ort.
+                                Alle Beiträge, Medienberichte und eigenen Texte zu Workfare gesammelt an einem Ort.
                             </p>
                         </section>
 
