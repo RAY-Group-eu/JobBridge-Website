@@ -44,7 +44,7 @@ function getProfileInsightSource(insight: Insight) {
 export const metadata: Metadata = {
     title: member ? `${member.displayName} – ${member.role}` : "Rezan Yalcin",
     description: member
-        ? "Profil von Rezan Yalcin, Gründer von JobBridge: App-Entwicklung, sichere Taschengeldjobs, Jugend forscht und ausgewählte Medienberichte."
+        ? "Profil von Rezan Yalcin, Gründer von Workfare: App-Entwicklung, sichere Taschengeldjobs, Jugend forscht und ausgewählte Medienberichte."
         : undefined,
     alternates: {
         canonical: "/team/rezan-yalcin",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: member ? `${member.displayName} | ${siteConfig.name}` : `Rezan Yalcin | ${siteConfig.name}`,
         description: member
-            ? "Rezan Yalcin entwickelt JobBridge als sichere digitale Taschengeldbörse für lokale Hilfe, Jugendliche, Eltern und Auftraggeber."
+            ? "Rezan Yalcin entwickelt Workfare als sichere digitale Taschengeldbörse für lokale Hilfe, Jugendliche, Eltern und Auftraggeber."
             : undefined,
         url: "/team/rezan-yalcin",
         images: [{ url: "/og-image.png", width: 1200, height: 630, alt: member?.displayName ?? siteConfig.name }],
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: member ? `${member.displayName} | ${siteConfig.name}` : `Rezan Yalcin | ${siteConfig.name}`,
         description: member
-            ? "Profil von Rezan Yalcin, Gründer von JobBridge, mit ausgewählten Beiträgen und öffentlichen Erwähnungen."
+            ? "Profil von Rezan Yalcin, Gründer von Workfare, mit ausgewählten Beiträgen und öffentlichen Erwähnungen."
             : undefined,
         images: ["/og-image.png"],
     },
@@ -85,11 +85,11 @@ export default function RezanYalcinProfilePage() {
     );
     const pressMentions = [
         externalInsights.find((insight) => insight.id === "wdr-studiogespraech-rezan-yalcin-app-entwickler"),
-        externalInsights.find((insight) => insight.id === "wdr-rezan-jobbridge-jugend-forscht"),
+        externalInsights.find((insight) => insight.id === "wdr-rezan-taschengeldboerse-jugend-forscht"),
         externalInsights.find((insight) => insight.id === "blick-aktuell-jugend-forscht-bundesfinale-4-platz"),
     ].filter(isDefined);
     const selectedAuthoredInsights = [
-        ownInsights.find((insight) => insight.slug === "warum-jobbridge-entstanden-ist"),
+        ownInsights.find((insight) => insight.slug === "warum-workfare-entstanden-ist"),
     ].filter(isDefined);
     const profileSubjectItems = [...pressMentions, ...selectedAuthoredInsights];
     const mentionJsonLd = profileSubjectItems.map((insight) => ({
@@ -273,7 +273,7 @@ export default function RezanYalcinProfilePage() {
                                     Presse & Erwähnungen
                                 </h2>
                                 <p className="mt-5 max-w-2xl text-[1rem] font-medium leading-7 tracking-[-0.02em] text-slate-500 sm:text-[1.08rem]">
-                                    Ausgewählte öffentliche Fundstellen zu Rezan Yalcin und JobBridge: Mediengespräch, WDR-Beitrag und die Einordnung zum Bundesfinale.
+                                    Ausgewählte öffentliche Fundstellen zu Rezan Yalcin und Workfare: Mediengespräch, WDR-Beitrag und die Einordnung zum Bundesfinale.
                                 </p>
                             </div>
                             <Link
@@ -345,7 +345,7 @@ export default function RezanYalcinProfilePage() {
                                     Beiträge von Rezan
                                 </h2>
                                 <p className="mt-5 text-[1rem] font-medium leading-7 tracking-[-0.02em] text-slate-500 sm:text-[1.05rem]">
-                                    Ausgewählte eigene Texte und Einordnungen aus der Arbeit an JobBridge.
+                                    Ausgewählte eigene Texte und Einordnungen aus der Arbeit an Workfare.
                                 </p>
                             </div>
 

@@ -6,13 +6,13 @@ import { Footer } from "@/components/Footer";
 import { SiteMenuButton } from "@/components/SiteMenu";
 import { siteConfig } from "@/config/site";
 
-const updatedAt = "23. Juni 2026";
+const updatedAt = "8. September 2026";
 const platformImprintUrl = "https://app.jobbridge.app/legal/impressum";
 
 export const metadata: Metadata = {
     title: "Impressum",
     description:
-        "Impressum und Anbieterkennzeichnung für jobbridge.app: verantwortliche Angaben, Kontakt und Abgrenzung zur JobBridge-Plattform.",
+        "Impressum und Anbieterkennzeichnung für workfa.re: verantwortliche Angaben, Kontakt und Abgrenzung zur Workfare-Plattform.",
     robots: {
         index: true,
         follow: true,
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: `Impressum | ${siteConfig.name}`,
         description:
-            "Anbieterkennzeichnung, Kontakt und rechtliche Abgrenzung der JobBridge-Landingpage.",
+            "Anbieterkennzeichnung, Kontakt und rechtliche Abgrenzung der Workfare-Landingpage.",
         url: "/impressum",
         images: [{ url: "/og-image.png", width: 1200, height: 630, alt: siteConfig.name }],
     },
@@ -31,13 +31,13 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: `Impressum | ${siteConfig.name}`,
         description:
-            "Anbieterkennzeichnung, Kontakt und rechtliche Abgrenzung der JobBridge-Landingpage.",
+            "Anbieterkennzeichnung, Kontakt und rechtliche Abgrenzung der Workfare-Landingpage.",
         images: ["/og-image.png"],
     },
 };
 
 const essentials = [
-    "Anbieterkennzeichnung für die Landingpage jobbridge.app.",
+    "Anbieterkennzeichnung für die Landingpage workfa.re.",
     "Kontakt zur Website erfolgt direkt per E-Mail.",
     "Für app.jobbridge.app gelten eigene rechtliche Angaben der Plattform.",
 ];
@@ -116,7 +116,7 @@ function ImprintIllustration() {
 function Header() {
     return (
         <header className="relative z-30 mx-auto flex w-full max-w-7xl items-center justify-between px-5 py-5 sm:px-8 lg:px-10">
-            <Link href="/" aria-label="JobBridge Startseite" className="flex items-center gap-3">
+            <Link href="/" aria-label="Workfare Startseite" className="flex items-center gap-3">
                 <span className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border border-white/10 bg-white/[0.04] shadow-[0_16px_44px_rgba(2,6,23,0.22)]">
                     <Image
                         src="/favicon.ico"
@@ -127,7 +127,7 @@ function Header() {
                         className="h-10 w-10 scale-[1.08] object-cover"
                     />
                 </span>
-                <span className="text-sm font-semibold tracking-[-0.01em] text-white">JobBridge</span>
+                <span className="text-sm font-semibold tracking-[-0.01em] text-white">Workfare</span>
             </Link>
             <SiteMenuButton />
         </header>
@@ -200,11 +200,11 @@ export default function ImpressumPage() {
                             </span>
                         </h1>
                         <p className="mt-8 max-w-[39rem] text-pretty text-[clamp(1.05rem,1.45vw,1.32rem)] font-medium leading-[1.42] tracking-[-0.012em] text-slate-300">
-                            Die Anbieterkennzeichnung für jobbridge.app. Kurz auffindbar, klar getrennt von der
+                            Die Anbieterkennzeichnung für workfa.re. Kurz auffindbar, klar getrennt von der
                             Plattform und ohne Angaben, die hier keinen Zweck erfüllen.
                         </p>
                         <p className="mt-6 text-sm text-slate-500">
-                            Stand: <span className="text-slate-300">{updatedAt}</span> · gilt für jobbridge.app
+                            Stand: <span className="text-slate-300">{updatedAt}</span> · gilt für workfa.re
                         </p>
                     </div>
                 </div>
@@ -233,7 +233,7 @@ export default function ImpressumPage() {
                                         <>
                                             Rezan Aaron Yalcin
                                             <br />
-                                            JobBridge
+                                            Workfare
                                         </>
                                     ),
                                 },
@@ -298,7 +298,7 @@ export default function ImpressumPage() {
 
                     <LegalRow eyebrow="04" title="Abgrenzung zur Plattform">
                         <p>
-                            Dieses Impressum gilt für die Landingpage <strong className="text-white">jobbridge.app</strong>.
+                            Dieses Impressum gilt für die Landingpage <strong className="text-white">workfa.re</strong>.
                             Die Plattform unter{" "}
                             <a href="https://app.jobbridge.app" className="text-blue-200 transition hover:text-white">
                                 app.jobbridge.app

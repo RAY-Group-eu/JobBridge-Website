@@ -11,14 +11,14 @@ export const metadata: Metadata = {
         canonical: page.path,
     },
     openGraph: {
-        title: `${page.navLabel} | JobBridge`,
+        title: `${page.navLabel} | Workfare`,
         description: page.metaDescription,
         url: page.path,
-        images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "JobBridge" }],
+        images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Workfare" }],
     },
     twitter: {
         card: "summary_large_image",
-        title: `${page.navLabel} | JobBridge`,
+        title: `${page.navLabel} | Workfare`,
         description: page.metaDescription,
         images: ["/og-image.png"],
     },

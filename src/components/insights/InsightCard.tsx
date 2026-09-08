@@ -48,7 +48,7 @@ export function InsightCard({ insight }: InsightCardProps) {
                             <time dateTime={insight.publishedAt}>{formatInsightDate(insight.publishedAt)}</time>
                             <span className="mx-2 text-slate-600">/</span>
                             <span className="text-slate-300">
-                                {insight.kind === "external" ? insight.sourceName : (author?.displayName ?? "JobBridge")}
+                                {insight.kind === "external" ? insight.sourceName : (author?.displayName ?? "Workfare")}
                             </span>
                         </div>
                         <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/74 transition duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:bg-white group-hover:text-black">

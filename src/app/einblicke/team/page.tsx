@@ -7,10 +7,10 @@ import { serializeJsonLd } from "@/lib/json-ld";
 
 const path = `${insightsPage.path}/team`;
 const description =
-    "Das JobBridge-Team: öffentliche Profile, Verantwortlichkeiten und Kontaktwege der Menschen hinter der digitalen Taschengeldbörse.";
+    "Das Workfare-Team: öffentliche Profile, Verantwortlichkeiten und Kontaktwege der Menschen hinter der digitalen Taschengeldbörse.";
 
 export const metadata: Metadata = {
-    title: `Team | ${siteConfig.name}`,
+    title: "Team",
     description,
     alternates: {
         canonical: path,

@@ -45,6 +45,26 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      ...["www.workfa.re", "jobbridge.app", "www.jobbridge.app"].map((host) => ({
+        source: "/:path*",
+        has: [{ type: "host" as const, value: host.replaceAll(".", "\\.") }],
+        destination: "https://workfa.re/:path*",
+        permanent: true,
+      })),
+      ...[
+        ["warum-jobbridge-entstanden-ist", "warum-workfare-entstanden-ist"],
+        ["wdr-lokalzeit-bonn-jobbridge-video", "wdr-lokalzeit-bonn-taschengeldboerse-video"],
+        ["wdr-rezan-jobbridge-jugend-forscht", "wdr-rezan-taschengeldboerse-jugend-forscht"],
+        ["jugend-forscht-jobbridge-offiziell-4-preis", "jugend-forscht-taschengeldboerse-offiziell-4-preis"],
+      ].map(([oldSlug, newSlug]) => ({
+        source: `/einblicke/${oldSlug}`,
+        destination: `/einblicke/${newSlug}`,
+        permanent: true,
+      })),
+    ];
+  },
   images: {
     remotePatterns: [
       {

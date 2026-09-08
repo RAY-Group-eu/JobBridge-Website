@@ -195,7 +195,7 @@ function MenuOverlay({
                     </div>
 
                     <div aria-hidden className="hero-menu-wordmark">
-                        JobBridge
+                        Workfare
                     </div>
                 </motion.div>
             ) : null}

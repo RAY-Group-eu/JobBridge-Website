@@ -31,7 +31,7 @@ export function ExternalInsightPage({ insight }: ExternalInsightPageProps) {
                             Einblicke
                         </Link>
 
-                        <header className="mt-9 grid gap-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(26rem,0.78fr)] lg:items-center lg:gap-14">
+                        <header className={`mt-9 grid gap-10 ${insight.image ? "lg:grid-cols-[minmax(0,0.95fr)_minmax(26rem,0.78fr)] lg:items-center lg:gap-14" : "max-w-4xl"}`}>
                             <div className="min-w-0">
                                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-100/62">
                                     {insight.category}
@@ -96,7 +96,7 @@ export function ExternalInsightPage({ insight }: ExternalInsightPageProps) {
                         </h2>
                         <p>
                             Dieser Eintrag dokumentiert eine öffentliche Quelle über {siteConfig.name}. Die Originalquelle
-                            bleibt maßgeblich; JobBridge hält hier Kontext, Fundstelle und Bezug zur Plattform auffindbar.
+                            bleibt maßgeblich; Workfare hält hier Kontext, Fundstelle und Bezug zur Plattform auffindbar.
                         </p>
                         <p>
                             Für Nutzer und Suchmaschinen ist diese Seite der interne Einstiegspunkt zum Medienbericht. So

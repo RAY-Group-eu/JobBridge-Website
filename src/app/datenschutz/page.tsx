@@ -6,13 +6,13 @@ import { Footer } from "@/components/Footer";
 import { SiteMenuButton } from "@/components/SiteMenu";
 import { siteConfig } from "@/config/site";
 
-const updatedAt = "23. Juni 2026";
+const updatedAt = "8. September 2026";
 const platformPrivacyUrl = "https://app.jobbridge.app/legal/datenschutz";
 
 export const metadata: Metadata = {
     title: "Datenschutz",
     description:
-        "Datenschutzhinweise für jobbridge.app: welche Daten auf der JobBridge-Landingpage entstehen, wofür sie genutzt werden und welche Rechte bestehen.",
+        "Datenschutzhinweise für workfa.re: welche Daten auf der Workfare-Landingpage entstehen, wofür sie genutzt werden und welche Rechte bestehen.",
     robots: {
         index: true,
         follow: true,
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: `Datenschutz | ${siteConfig.name}`,
         description:
-            "Klarer Überblick über Datenverarbeitung, Kontakt, Chat, Hosting und Rechte auf der JobBridge-Landingpage.",
+            "Klarer Überblick über Datenverarbeitung, Kontakt, Chat, Hosting und Rechte auf der Workfare-Landingpage.",
         url: "/datenschutz",
         images: [{ url: "/og-image.png", width: 1200, height: 630, alt: siteConfig.name }],
     },
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: `Datenschutz | ${siteConfig.name}`,
         description:
-            "Klarer Überblick über Datenverarbeitung, Kontakt, Chat, Hosting und Rechte auf der JobBridge-Landingpage.",
+            "Klarer Überblick über Datenverarbeitung, Kontakt, Chat, Hosting und Rechte auf der Workfare-Landingpage.",
         images: ["/og-image.png"],
     },
 };
@@ -147,7 +147,7 @@ function PrivacyIllustration() {
 function Header() {
     return (
         <header className="relative z-30 mx-auto flex w-full max-w-7xl items-center justify-between px-5 py-5 sm:px-8 lg:px-10">
-            <Link href="/" aria-label="JobBridge Startseite" className="flex items-center gap-3">
+            <Link href="/" aria-label="Workfare Startseite" className="flex items-center gap-3">
                 <span className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border border-white/10 bg-white/[0.04] shadow-[0_16px_44px_rgba(2,6,23,0.22)]">
                     <Image
                         src="/favicon.ico"
@@ -158,7 +158,7 @@ function Header() {
                         className="h-10 w-10 scale-[1.08] object-cover"
                     />
                 </span>
-                <span className="text-sm font-semibold tracking-[-0.01em] text-white">JobBridge</span>
+                <span className="text-sm font-semibold tracking-[-0.01em] text-white">Workfare</span>
             </Link>
             <SiteMenuButton />
         </header>
@@ -231,11 +231,11 @@ export default function DatenschutzPage() {
                             </span>
                         </h1>
                         <p className="mt-8 max-w-[39rem] text-pretty text-[clamp(1.05rem,1.45vw,1.32rem)] font-medium leading-[1.42] tracking-[-0.012em] text-slate-300">
-                            Diese Hinweise erklären, welche Daten auf der JobBridge-Landingpage entstehen, wofür sie
+                            Diese Hinweise erklären, welche Daten auf der Workfare-Landingpage entstehen, wofür sie
                             genutzt werden und welche Rechte Sie haben.
                         </p>
                         <p className="mt-6 text-sm text-slate-500">
-                            Stand: <span className="text-slate-300">{updatedAt}</span> · gilt für jobbridge.app
+                            Stand: <span className="text-slate-300">{updatedAt}</span> · gilt für workfa.re
                         </p>
                     </div>
                 </div>
@@ -253,7 +253,7 @@ export default function DatenschutzPage() {
 
                     <LegalRow eyebrow="01" title="Geltungsbereich">
                         <p>
-                            Diese Datenschutzhinweise gelten für die Website <strong className="text-white">jobbridge.app</strong>.
+                            Diese Datenschutzhinweise gelten für die Website <strong className="text-white">workfa.re</strong>.
                             Die Plattform unter{" "}
                             <a href="https://app.jobbridge.app" className="text-blue-200 transition hover:text-white">
                                 app.jobbridge.app
@@ -277,7 +277,7 @@ export default function DatenschutzPage() {
 
                     <LegalRow eyebrow="02" title="Verantwortlicher">
                         <p>
-                            Verantwortlich für diese Landingpage ist Rezan Aaron Yalcin, JobBridge, Am Neuen Wasserwerk
+                            Verantwortlich für diese Landingpage ist Rezan Aaron Yalcin, Workfare, Am Neuen Wasserwerk
                             3, 53359 Rheinbach, Deutschland.
                         </p>
                         <DefinitionRows

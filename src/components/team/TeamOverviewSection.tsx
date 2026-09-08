@@ -204,7 +204,7 @@ export function TeamOverviewSection({ showAllLink = false }: TeamOverviewSection
                         Team
                     </h2>
                     <p className="mt-4 max-w-2xl text-[1rem] font-medium leading-7 tracking-[-0.02em] text-slate-500 sm:text-[1.08rem]">
-                        Personen, die JobBridge entwickeln, erklären und verantworten.
+                        Personen, die Workfare entwickeln, erklären und verantworten.
                     </p>
                 </div>
                 {showAllLink ? (

@@ -954,7 +954,7 @@ function HeroMenuOverlay({
                         aria-hidden
                         className="hero-menu-wordmark"
                     >
-                        JobBridge
+                        Workfare
                     </div>
                 </motion.div>
             ) : null}
@@ -993,7 +993,7 @@ function Hero() {
     return (
         <section
             ref={heroRef}
-            aria-label="JobBridge Hero"
+            aria-label="Workfare Hero"
             className="relative min-h-[calc(100svh-1rem)] w-full overflow-hidden rounded-[24px] border border-white/10 bg-[#030712] text-white shadow-[0_40px_140px_rgba(2,6,23,0.55)] sm:min-h-[calc(100svh-1.5rem)] sm:rounded-[28px] lg:min-h-[calc(100svh-2rem)] lg:rounded-[32px]"
             style={{
                 backgroundImage: showCanvas ? undefined : MOBILE_NOISE_URL,
@@ -1022,7 +1022,7 @@ function Hero() {
                 >
                     <Link
                         href="/"
-                        aria-label="JobBridge Startseite"
+                        aria-label="Workfare Startseite"
                         className="group flex min-w-0 items-center gap-3 rounded-[1.45rem] py-1 pr-3 outline-none transition focus-visible:ring-2 focus-visible:ring-cyan-200/70"
                     >
                         <span className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-[1.15rem] border border-white/12 bg-[linear-gradient(180deg,rgba(255,255,255,0.11),rgba(255,255,255,0.035))] shadow-[0_12px_34px_rgba(2,6,23,0.38)] transition group-hover:border-cyan-100/28 group-hover:bg-white/[0.075]">
@@ -1039,7 +1039,7 @@ function Hero() {
                         </span>
                         <span className="min-w-0">
                             <span className="block truncate text-[1.04rem] font-semibold tracking-normal text-white">
-                                JobBridge
+                                Workfare
                             </span>
                         </span>
                     </Link>
@@ -1174,7 +1174,7 @@ function Hero() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.82, delay: 1.44, ease: EASE }}
                         >
-                            JobBridge bringt Jugendliche, Eltern und Auftraggeber in Deutschland auf eine Plattform, die Schutz nicht als Nachtrag behandelt. Verifizierte Auftraggeber, moderierte Kommunikation und klare Freigaben machen den Einstieg besser.
+                            Workfare bringt Jugendliche, Eltern und Auftraggeber in Deutschland auf eine Plattform, die Schutz nicht als Nachtrag behandelt. Verifizierte Auftraggeber, moderierte Kommunikation und klare Freigaben machen den Einstieg besser.
                         </motion.p>
                     </motion.div>
 
